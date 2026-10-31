@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101321">
+  <meta name="description" content="Smartner AI — a helpful AI assistant.">
+  <title>Smartner AI</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Smartner AI home">
+        <span class="brand-mark">S</span><span>Smartner<span class="brand-light"> AI</span></span>
+      </a>
+      <button id="new-chat" class="new-chat" type="button"><span>＋</span> New chat</button>
+      <div class="sidebar-note">Your AI workspace</div>
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span><span>Ready to help</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">S</span> Smartner AI</div>
+        <div class="topbar-label">AI Assistant</div>
+        <a class="github-link" href="https://github.com/robotz1234567890/smartner-ai" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </header>
+
+      <section class="chat-area" aria-label="Chat">
+        <div id="welcome" class="welcome">
+          <div class="welcome-icon">✦</div>
+          <p class="eyebrow">WELCOME TO SMARTNER AI</p>
+          <h1>What can I help<br><span>you figure out?</span></h1>
+          <p class="welcome-copy">Ask a question, explore an idea, or get help with something you're working on.</p>
+          <div class="suggestions">
+            <button type="button" class="suggestion">Explain something complicated</button>
+            <button type="button" class="suggestion">Help me brainstorm ideas</button>
+            <button type="button" class="suggestion">Write or improve something</button>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-live="polite"></div>
+      </section>
+
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="message-input">Message Smartner AI</label>
+        <textarea id="message-input" rows="1" placeholder="Message Smartner AI..." required></textarea>
+        <button id="send-button" class="send-button" type="submit" aria-label="Send message">↑</button>
+        <div class="composer-hint">Smartner AI can make mistakes. Check important information.</div>
+      </form>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
